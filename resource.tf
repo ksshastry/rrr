@@ -1,9 +1,4 @@
-resource "aws_s3_bucket" "goldennn-bucket" {
-  bucket = "goldennn3-bucket"
-  acl    = "public-read"
-
-
-  website {
-    index_document = "index.html"
-  }
+resource "aws_instance" "example" {
+ami = "ami-0c02fb55956c7d316"
+instance_type = "t2.micro"
 }
